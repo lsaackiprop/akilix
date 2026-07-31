@@ -146,7 +146,7 @@ export default function Footer() {
           </p>
           <ul className="flex flex-wrap items-center gap-x-5 gap-y-2 text-xs text-slate-500">
             {LEGAL.map((l) => (
-              <li key={l.href}>
+              <li key={`${l.label}-${l.href}`}>
                 <Link href={l.href} className="transition-colors hover:text-blue-600">
                   {l.label}
                 </Link>

@@ -12,12 +12,6 @@ import FaqSection from "@/src/components/sections/FaqSection";
 import PricingSection from "@/src/components/sections/PricingSection";
 import CtaBanner from "@/src/components/common/CtaBanner";
 import Footer from "@/src/components/footer/Footer";
-import dynamic from "next/dynamic";
-
-const SupabaseConnectionDebug = dynamic(
-  () => import("@/src/components/debug/SupabaseConnectionDebug"),
-  { ssr: false }
-);
 
 export default function Home() {
   return (
@@ -38,7 +32,6 @@ export default function Home() {
         <CtaBanner />
       </main>
       <Footer />
-      <SupabaseConnectionDebug />
     </div>
   );
 }
